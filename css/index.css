@@ -80,6 +80,9 @@ section{
         /* bottom: 50%; */
         position: sticky;
     }
+    .contenedor-texto{
+        padding: 2em;
+    }
 
     .articulo-container{
         padding: 1em 0;
