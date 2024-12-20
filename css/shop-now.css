@@ -31,22 +31,10 @@ section input{
 
 }
 #texto-2{
-    /* overflow: hidden;
-    height: 0; */
-
     display: none;
     transition: .5s ease;
-
-    /*opacity: 0;  Empieza con opacidad 0, es decir, invisible */
-    /*visibility: hidden;  Lo ocultamos con visibilidad */
-    /* transition: opacity 0.5s ease, visibility 0s 0.5s; */
 }
 
-#texto-2.mostrar{
-    opacity: 1; /* Lo hacemos visible */
-    visibility: visible; /* Lo hacemos visible */
-    transition: opacity 0.5s ease, visibility 0s 0s; 
-}
 
 /*MAIN*/
 main{

@@ -1,0 +1,67 @@
+/*SECTION CABECERA*/
+section{
+    background-color: #F0EEEF;
+    line-height: normal;
+    padding: 0 5em;
+}
+h1{
+    /* font-weight: 400; */
+    font-size: 4.5em;
+}
+section h2{
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+/*MAIN*/
+main{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 5em;
+}
+.tarjeta{
+    max-width: 100%;
+    text-align: right;
+}
+.tarjeta-imagen{
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+.tarjeta-imagen img{
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+/* .tarjeta-boton{
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    color: #393131;
+    padding: 1em 0;
+    font-size: 1em;
+} */
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    section{
+        padding: 2em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    section h2{
+        font-size: 2em;
+    }
+    main{
+        margin: 2em;
+        gap: 1em;
+    }
+    /* .tarjeta-boton{
+        font-size: .75em;
+    } */
+}
