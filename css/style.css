@@ -27,7 +27,7 @@ body{
     justify-content: center;
     text-align: center;
     padding: 2em 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 img{

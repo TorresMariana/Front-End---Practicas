@@ -40,7 +40,7 @@ section{
 .articulo-container{
     padding: 2em 5em;
     position: relative;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .articulo-imagen{
     max-height: 400px;
