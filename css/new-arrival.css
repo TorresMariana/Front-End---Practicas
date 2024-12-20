@@ -6,6 +6,9 @@ section{
 section .contenedor-texto{
     padding: 5em;
 }
+h1{
+    padding-top: 1em;
+}
 
 /*MAIN*/
 main{
@@ -33,7 +36,7 @@ main{
     background-color: #ffffff;
     border: none;
     color: #393131;
-    padding: 1em;
+    padding: 1em 0;
     font-size: 1em; /**/
 }
 
@@ -44,10 +47,16 @@ main{
     section .contenedor-texto{
         padding: 3em 2em;
     }
+    h1{
+        font-size: 2em;
+    }
 
     main{
         margin: 2em;
         gap: 1em;
+    }
+    .tarjeta-boton{
+        font-size: .75em; /**/
     }
 
 }
