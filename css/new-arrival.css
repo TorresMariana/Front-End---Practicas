@@ -1,4 +1,4 @@
-/*SECTION CABECERA*/
+/*SECCION CABECERA*/
 section{
     background-color: #F0EEEF;
 
@@ -37,7 +37,7 @@ main{
     border: none;
     color: #393131;
     padding: 1em 0;
-    font-size: 1em; /**/
+    font-size: 1em;
 }
 
 
@@ -56,7 +56,7 @@ main{
         gap: 1em;
     }
     .tarjeta-boton{
-        font-size: .75em; /**/
+        font-size: .75em;
     }
 
 }
