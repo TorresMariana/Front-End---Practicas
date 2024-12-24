@@ -41,6 +41,7 @@ main{
 .articulo-container p{
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-top: 1em;
 }
 
@@ -67,6 +68,6 @@ main{
     }
     .articulo-container p{
         font-size: .8em;
-        margin-bottom: 1em;
+        padding: 1em;
     }
 }
