@@ -1,0 +1,131 @@
+body{
+    background-color: var(--gris);
+}
+header{
+    background-color: #fff;
+}
+
+/*PORTADA*/
+.portada{
+    max-height: 70vh;
+    overflow: hidden;
+    padding: 0;
+}
+.portada img{
+    height: auto;
+    vertical-align: middle;
+}
+
+/*MAIN*/
+main{
+    /* background-color: var(--gris); */
+    padding: 0 3em !important;
+    position: relative;
+    min-height: 100em;
+    transform: translate(0, -10%);
+}
+.tarjeta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tarjeta:nth-child(2) h2, .tarjeta:nth-child(4) h2{
+    order: 1;
+}
+.tarjeta:nth-child(2) .tarjeta-imagen, .tarjeta:nth-child(4) .tarjeta-imagen{
+    order: 2;
+}
+.tarjeta-imagen{
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    border: 20px solid #fff;
+}
+.tarjeta-imagen img{
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+
+h2, aside h3{
+    font-family: "Great Vibes";
+    font-weight: 575;
+}
+h2{
+    font-size: 2.5em;
+}
+
+/* .tarjeta-contenedor{
+    position: relative;
+
+} */
+.tarjeta{
+    position: absolute;
+}
+.tarjeta:nth-child(1), .tarjeta:nth-child(3), .tarjeta:nth-child(5){
+    z-index: 2;
+}
+.tarjeta:nth-child(1){
+    /* transform: translate(5%, -50%); */
+    top: 0;
+    left: 5em;
+}
+.tarjeta:nth-child(2){
+    /* transform: translate(-5%, -75%); */
+    /* top: 15em; */
+    top: 20em;
+    right: 5em;
+}
+.tarjeta:nth-child(3){
+    /* transform: translate(5%, -100%); */
+    /* top: 30em; */
+    top: 40em;
+    left: 5em;
+}
+.tarjeta:nth-child(4){
+    /* transform: translate(-5%, -125%); */
+    /* top: 45em; */
+    top: 60em;
+    right: 5em;
+}
+.tarjeta:nth-child(5){
+    /* transform: translate(5%, -150%); */
+    /* top: 60em; */
+    top: 80em;
+    left: 5em;
+}
+
+/*ASIDE*/
+aside{
+    padding: 2em !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+}
+aside h3{
+    font-size: 2em;
+}
+
+
+
+
+@media screen and (max-width:950px){
+    main{
+        min-height: auto;
+    }
+    main, .tarjeta{
+        position: static;
+    }
+    .tarjeta{
+        transform: translate(0, 0);
+    }
+    .tarjeta-imagen{
+        border: 10px solid #fff;
+    }
+    h2, aside h3{
+        font-size: 1.5em;
+    }
+}
