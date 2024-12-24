@@ -208,6 +208,10 @@ footer span{
         position: relative;
         float: left;
     }
+    .navegador ul li a:hover{
+        border: none;
+        color: #ffffff;
+    }
 
     /*MENU HAMBRGUESA*/
     .navegador label{
