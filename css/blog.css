@@ -65,4 +65,8 @@ main{
     .articulo-container{
         padding: 1em 0;
     }
+    .articulo-container p{
+        font-size: .8em;
+        margin-bottom: 1em;
+    }
 }
