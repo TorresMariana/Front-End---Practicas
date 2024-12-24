@@ -1,9 +1,6 @@
 body{
     background-color: var(--gris);
 }
-header{
-    background-color: #fff;
-}
 
 /*PORTADA*/
 .portada{
@@ -99,7 +96,7 @@ h2{
 
 /*ASIDE*/
 aside{
-    padding: 2em !important;
+    padding: 2em 3em !important;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -108,6 +105,9 @@ aside{
 aside h3{
     font-size: 2em;
 }
+#texto-explore{
+    display: none;
+}
 
 
 
@@ -115,6 +115,7 @@ aside h3{
 @media screen and (max-width:950px){
     main{
         min-height: auto;
+        padding: 0 2em !important;
     }
     main, .tarjeta{
         position: static;
@@ -127,5 +128,9 @@ aside h3{
     }
     h2, aside h3{
         font-size: 1.5em;
+    }
+
+    aside{
+        padding: 2em !important;
     }
 }

@@ -48,6 +48,7 @@ p{
     grid-template-columns: repeat(2, 1fr); */
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
     padding: 2em;
 }
 .marca{
