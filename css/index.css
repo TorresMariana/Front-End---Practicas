@@ -2,6 +2,7 @@
 main{
     position: relative;
     align-items: center;
+    padding: 0 !important;
 
 }
 .main-imagen{
@@ -86,9 +87,6 @@ h1{
 
 
 @media screen and (max-width:950px){
-    .portada{
-        padding: 0;
-    }
     .main-texto{
         padding: 2em;
     }
