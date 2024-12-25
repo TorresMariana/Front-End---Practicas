@@ -84,9 +84,9 @@ p{
     position: absolute;
     z-index: 10;
     top: 2%;
-    bottom: 0;
+    /* bottom: 0; */
     right: 0;
-    padding-right: 1.5em;
+    padding-right: 1em;
 }
 #menu-hamburguesa, .menu-icono-x{
     display: none;
