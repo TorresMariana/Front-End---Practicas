@@ -1,0 +1,86 @@
+main.container{
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+main div{
+    padding: 2em;
+}
+
+/* .contenido-imagen {
+    overflow: hidden;
+    padding: 0;
+} */
+
+main > div:nth-child(1){
+    grid-column: span 3;
+    margin-bottom: 5em;
+}
+main > div:nth-child(1) p{
+    max-width: 700px;
+}
+h1{
+    font-size: 5vw;
+    margin-bottom: .5em;
+}
+
+
+main > :not(div:nth-child(1)){
+    overflow: hidden;
+    height: 45vw;
+}
+
+.contenido-texto h2{
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: var(--amarillo);
+    background-color: var(--marron);
+    margin: 1em 0;
+}
+
+.contenido-texto img{
+    object-fit: contain;
+    aspect-ratio: 4/2;
+    filter: drop-shadow(5px 10px 5px #0000006c);
+    
+}
+main >div:not(:nth-child(1)) img{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      /* width: 300%; */
+      /* width: 0%; */
+    }
+  
+    to {
+      margin-left: 0%;
+      /* width: 100%; */
+    }
+}
+
+
+@media screen and (max-width:950px){
+    main.container{
+        grid-template-columns: 1fr;
+    }
+    main > div:nth-child(1){
+        grid-column: 1;
+        margin-bottom: 3em;
+    }
+    main > :not(div:nth-child(1)){
+        height: auto;
+    }
+    main > :not(div:nth-child(1)) p{
+        font-size: 1em;
+    }
+    
+    .contenido-texto p{
+        font-size: .8em;
+    }
+    h1{
+        font-size: 8vw;
+    }
+}

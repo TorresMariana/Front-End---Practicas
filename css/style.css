@@ -1,0 +1,344 @@
+/*TIPOGRAFIA*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+/*COLORES*/
+:root{
+    --marron: #3d2514;
+    --amarillo: #ffc045;
+    --rojo: #bf2222;
+    --gris: #dcdcdc;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none;
+    outline: none !important;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--marron);
+
+
+    background-image: url('/img/patron.jpg');
+    background-repeat: repeat;
+    background-size: 200px;
+    background-position: center;
+    background-position: top;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    /* border: 2px solid red; */
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", serif;
+    text-shadow: 3px 3px #fee8bc;
+}
+h2, h3, h4{
+    text-transform: uppercase;
+    font-family: "Oswald", serif;;
+}
+a, li{
+    text-decoration: none;
+    color: var(--marron);
+}
+
+/*HEADER*/
+header.container{
+    text-align: justify;
+}
+.delivery{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    gap: 1em;
+    grid-column: span 2;
+    /* border: 2px solid blue; */
+}
+.delivery img{
+    width: 40px;
+}
+header .marca{
+    width: 30%;
+    width: 200px;
+    cursor: pointer;
+}
+header .marca-a{
+    /* border: 2px solid blue; */
+    cursor: auto;
+    width: fit-content;
+}
+.navegador{
+    /* border: 2px solid blue; */
+    text-transform: uppercase;
+    font-family: "Oswald", serif;;
+    font-size: 1.2em;
+}
+.navegador ul{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+    justify-content: right;
+}
+.navegador ul li a{
+    font-style: none;
+    font-weight: 500;
+}
+.navegador ul li a:hover{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+/*MENU HAMBURGUESA*/
+.navegador label{
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    /* position: absolute;
+    z-index: 10;
+    top: 2%;
+    right: 0;
+    padding-right: 1em; */
+
+}
+#menu-hamburguesa, .menu-icono-x{
+    display: none;
+}
+
+
+
+
+
+/*FOOTER*/
+footer.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 2em;
+
+    background-image: url('/img/imagen-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    position: relative;
+    padding: 4em 2em;
+}
+footer.container::after{
+    content: ''; /* El contenido vacío es necesario para que el pseudo-elemento se genere */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Coloca la capa encima de la imagen */
+    background-image:linear-gradient(#00000090, rgba(0, 0, 0, 0.8));
+}
+
+footer div{
+    z-index: 2;
+}
+footer > div:nth-child(1), footer > div:nth-child(3) {
+    text-align: start;
+}
+.marca-footer{
+    /* max-width: 20vw; */
+    width: 50%;
+    margin-bottom: 1em;
+    filter: grayscale(100%) brightness(1000%);
+}
+.locacion-email{
+    text-align: right;  /**/
+    justify-content: baseline;
+}
+.locacion-email h4{
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+.locacion-email img{
+    max-width: 5%;
+    width: 4%;
+    margin-right: .5em;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right; /**/
+    align-items: center;
+    gap: 2em;
+}
+footer ul li{
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+}
+footer ul li a{
+    padding: .5em;
+}
+footer ul li:hover{
+    background-color: var(--amarillo);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*HEADER*/
+    /* .marca{
+        width: 10%;
+    } */
+    header.container{
+        gap: 1em;
+    }
+    .delivery{
+        gap: 1em;
+        font-size: .7em;
+        justify-content: start;
+    }
+    .delivery img{
+        width: 30px;
+    }
+
+    .navegador{
+        z-index: 5;
+        max-width: 100%;
+
+    }
+    .navegador nav{
+        position: absolute;
+        padding: 1.5em;
+        top: 0;
+        left: 50%;
+        right: 0;
+        background-color: var(--amarillo);
+        height: 100%;
+        display: none;
+
+    }
+    .navegador ul{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1em;
+    }
+    .navegador nav ul li{
+        position: relative;
+        float: left;
+    }
+    .navegador ul li a:hover{
+        border: none;
+        color: #ffffff;
+    }
+
+    .navegador nav::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Coloca la capa encima de la imagen */
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+    }
+
+    /*MENU HAMBRGUESA*/
+    .navegador label{
+        display: initial;
+
+        display: flex;
+        justify-content: end;
+    }
+
+    #menu-hamburguesa:checked ~ nav{
+        display: flex;
+
+    }
+    #menu-hamburguesa:checked + label .menu-icono-x{
+        display: initial;
+        transform: rotate(90deg);
+    }
+    #menu-hamburguesa:checked + label .menu-icono{
+        display: none;
+        transform: rotate(90deg);
+    }
+    #menu-hamburguesa:checked + label{
+        position: absolute;
+        z-index: 10;
+        top: 2%;
+        right: 0;
+        right: 5%;
+        /* padding-right: 1em; */
+    }
+
+
+
+
+
+
+    /*FOOTER*/
+    footer.container{
+        grid-template-columns: 1fr;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer > div{
+        text-align: center !important;
+    }
+    footer ul{
+        justify-content: center; 
+    }
+
+    footer span, footer p{
+        font-size: .8em;
+    }
+    /* footer > div:nth-child(1){ */
+    footer p{
+        /* align-items: center;
+        justify-content: center; */
+        padding: 0 3em;
+    }
+    
+}

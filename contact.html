@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <!--Favicon-->
+    <link rel="icon" type="icono" href="img/favicon.png">
+    <!--Exportar Bootstrap iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <aside class="container">
+        <img src="img/delivery.png" alt="imagen-delivery">
+        <span>Express Delivery</span>
+        <span>+1 234 567 890</span>
+    </aside> -->
+
+    <!--HEADER-->
+    <header class="container">
+        <div class="delivery">
+            <img src="img/delivery.png" alt="imagen-delivery">
+            <span>Express Delivery</span>
+            <span>+1 234 567 890</span>
+        </div>
+
+        <!--Marca-->
+        <a class="marca-a" href="index.html"><img class="marca" src="img/marca.png" alt="marca"></a>
+
+        <!--Navegador-->
+        <div class="navegador">
+            <!--Menu hamburguesa-->
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <i class="bi bi-list menu-icono"></i>
+                <i class="bi bi-x-lg menu-icono-x"></i>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="our-story.html">Our story</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="container">
+        <h3>Reservation</h3>
+        <h1>Book your table</h1>
+
+        <img class="imagen-contacto" src="img/contacto-1.png" alt="imagen-contacto">
+        <div class="contacto">
+            <form action="" id="formulario">
+                <div>
+                    <input class="form-control" type="text" id="nombre-apellido" placeholder="Nombre y Apellido*">
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio.</span>
+                </div>
+                <div>
+                    <input class="form-control" type="email" id="email" placeholder="Correo eléctronico*" autocomplete="off">
+                    <span class="warning" id="mensaje-error-email">El campo es obligatorio.</span>
+                </div>
+                <div>
+                    <label for="fecha">Fecha (*):</label>
+                    <input class="form-control" type="date" id="fecha" min="2025-06-07" max="2025-12-31">
+                    <span class="warning" id="mensaje-error-fecha">El campo es obligatorio.</span>
+                </div>
+                <div>
+                    <label for="horario">Hora (*):</label>
+                    <input class="form-control" type="time" id="horario">
+                    <span class="warning" id="mensaje-error-horario">El campo es obligatorio.</span>
+                </div>
+                <div>
+                    <label for="cantidad">Cantidad de personas (*):</label>
+                    <input class="form-control" type="number" id="cantidad" min="1" max="10">
+                    <span class="warning" id="mensaje-error-cantidad">El campo es obligatorio.</span>
+                </div>
+                <div class="legal">
+                    <span>(*) Los campos marcados con asterisco son obligatorios</span>
+                    <p class="terminos-condiciones">
+                        <input class="" type="checkbox" id="checkbox" name="terminos-condiciones">
+                        He leído y acepto la <a href="terminos-condiciones">política de privacidad</a>.
+                        <span class="warning" id="mensaje-error-legal">El campo es obligatorio.</span>
+                    </p>
+                </div>
+
+                <!--Botón de enviar-->
+                <button class="boton-enviar" type="submit" id="botonEnviar">Find a table</button>
+            
+            </form>
+        </div>
+        <img src="img/contacto-2.png" alt="imagen-contacto">
+    </main>
+
+    <!--FOOTER-->
+    <footer class="container">
+        <div>
+            <img class="marca-footer" src="img/marca.png" alt="marca">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deserunt corporis optio itaque quis eveniet dolores laboriosam praesentium voluptatem officia doloremque maiores, nisi dolorem officiis, error iusto hic, amet quidem.
+            </p>
+        </div>
+        <div class="locacion-email">
+            <h4><img src="img/Location-icono.png" alt="locación"> Main Road, Building name, Country</h4>
+            <h4><img src="img/Email.png" alt="email"> info@companyname.com</h4>
+        </div>
+        <div>
+            <span>©Company name 2024. All rights reserved.</span>
+        </div>
+        <div>
+            <ul class="redes-sociales">
+                <li><a class="icono" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="icono" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="icono" href="https://twitter.com/"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="icono" href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script></script>
+</body>
+</html>
