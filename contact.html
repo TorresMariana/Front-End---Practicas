@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <!-- <aside class="container">
@@ -51,50 +52,57 @@
 
     <!--MAIN-->
     <main class="container">
-        <h3>Reservation</h3>
-        <h1>Book your table</h1>
-
-        <img class="imagen-contacto" src="img/contacto-1.png" alt="imagen-contacto">
+        <div class="titulo">
+            <h3>Reservation</h3>
+            <h1>Book your table</h1>
+        </div>
+        <img class="imagen-contacto-1" src="img/contacto-1.png" alt="imagen-contacto">
         <div class="contacto">
             <form action="" id="formulario">
                 <div>
                     <input class="form-control" type="text" id="nombre-apellido" placeholder="Nombre y Apellido*">
-                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio.</span>
+                    <span class="warning" id="mensaje-error-nombre">El campo es obligatorio*</span>
                 </div>
                 <div>
                     <input class="form-control" type="email" id="email" placeholder="Correo eléctronico*" autocomplete="off">
-                    <span class="warning" id="mensaje-error-email">El campo es obligatorio.</span>
+                    <span class="warning" id="mensaje-error-email">El campo es obligatorio*</span>
                 </div>
                 <div>
-                    <label for="fecha">Fecha (*):</label>
-                    <input class="form-control" type="date" id="fecha" min="2025-06-07" max="2025-12-31">
-                    <span class="warning" id="mensaje-error-fecha">El campo es obligatorio.</span>
+                    <div class="seleccionar">
+                        <label for="fecha">Fecha (*):</label>
+                        <input class="form-control" type="date" id="fecha" min="2025-06-07" max="2025-12-31">
+                    </div>
+                    <span class="warning" id="mensaje-error-fecha">El campo es obligatorio*</span>
                 </div>
                 <div>
-                    <label for="horario">Hora (*):</label>
-                    <input class="form-control" type="time" id="horario">
-                    <span class="warning" id="mensaje-error-horario">El campo es obligatorio.</span>
+                    <div class="seleccionar">
+                        <label for="horario">Hora (*):</label>
+                        <input class="form-control" type="time" id="horario">
+                    </div>
+                    <span class="warning" id="mensaje-error-horario">El campo es obligatorio*</span>
                 </div>
                 <div>
-                    <label for="cantidad">Cantidad de personas (*):</label>
-                    <input class="form-control" type="number" id="cantidad" min="1" max="10">
-                    <span class="warning" id="mensaje-error-cantidad">El campo es obligatorio.</span>
+                    <div class="seleccionar">
+                        <label for="cantidad">Cantidad de personas (*):</label>
+                        <input class="form-control" type="number" id="cantidad" min="1" max="10" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    </div>
+                    <span class="warning" id="mensaje-error-cantidad">El campo es obligatorio*</span>
                 </div>
-                <div class="legal">
+                <!-- <div class="legal">
                     <span>(*) Los campos marcados con asterisco son obligatorios</span>
                     <p class="terminos-condiciones">
                         <input class="" type="checkbox" id="checkbox" name="terminos-condiciones">
                         He leído y acepto la <a href="terminos-condiciones">política de privacidad</a>.
                         <span class="warning" id="mensaje-error-legal">El campo es obligatorio.</span>
                     </p>
-                </div>
+                </div> -->
 
                 <!--Botón de enviar-->
                 <button class="boton-enviar" type="submit" id="botonEnviar">Find a table</button>
             
             </form>
         </div>
-        <img src="img/contacto-2.png" alt="imagen-contacto">
+        <img class="imagen-contacto-2" src="img/contacto-2.png" alt="imagen-contacto">
     </main>
 
     <!--FOOTER-->

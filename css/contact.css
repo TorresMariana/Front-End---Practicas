@@ -1,15 +1,144 @@
 main.container{
+    grid-template-columns: .5fr 2fr .5fr;
     justify-items: center;
     position: relative;
+    background-color: #ffffff;
+    padding: 2em 0;
+    overflow: hidden;
 }
-.imagen-contacto{
+.imagen-contacto-1, .imagen-contacto-2{
     object-fit: cover;
     position: absolute;
+    /* top: 0; */
+    /* left: 50;
+    right: 50; */
+    z-index: 1;
+    height: 50vh;
+    /* overflow: visible; */
+}
+.imagen-contacto-1{
     top: 0;
-    left: 50;
+    left: 0;
     right: 50;
-    z-index: -1;
+}
+.imagen-contacto-2{
+    /* left: 75%; */
+    right: -5%;
+    bottom: 0;
+    height: 35vh;
+}
 
+.titulo{
+    grid-column: span 3;
+}
+
+main h3{
+    /* font-size: 3vw; */
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    font-size: 3vw;
+    margin-bottom: .5em;
+}
+.contacto{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    
+}
+#formulario .div{
+    border: 2px solid rebeccapurple;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-control, button{
+    width: 100%;
+    height: 50px;
+    font-family: inherit; /*hereda las propiedades del padre*/
+    font-size: inherit;
+}
+.form-control{
+    padding: 5%;
+    border: 1px solid #a3a3a3;
+}
+
+.seleccionar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+.seleccionar label{
+    white-space: nowrap;   
+}
+.seleccionar input{
+    flex-grow: row nowrap;
+    text-align: center;
+}
+
+.warning{
+    color: var(--rojo);
+    display: none;
+}
+.form-control.warning{
+    border: 1px solid var(--rojo);
+}
+
+.boton-enviar{
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: var(--rojo);
+    border: none;
+
+}
+.boton-enviar:hover{
+    color: var(--marron);
+    background-color: var(--amarillo);
 }
 
 
+
+
+
+
+@media screen and (max-width:950px){
+    main.container{
+        grid-template-columns: 1fr;
+        padding: 2em;
+    }
+    .titulo.contacto{
+        grid-column: 1;
+    }
+    .contacto{
+        grid-column: 1/4;
+        grid-row: auto;
+    }
+    .imagen-contacto-1, .imagen-contacto-2{
+        display: none;
+    }
+    #formulario{
+        grid-template-columns: 1fr;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+}
