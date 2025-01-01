@@ -60,7 +60,6 @@ h1{
     
 }
 #formulario .div{
-    border: 2px solid rebeccapurple;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -75,10 +74,12 @@ h1{
 }
 .form-control{
     padding: 5%;
+    color: var(--marron);
     border: 1px solid #a3a3a3;
 }
 
 .seleccionar{
+    color: var(--marron);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -91,6 +92,9 @@ h1{
     flex-grow: row nowrap;
     text-align: center;
 }
+#cantidadPersonas{
+    width: 100px;
+}
 
 .warning{
     color: var(--rojo);
@@ -98,6 +102,11 @@ h1{
 }
 .form-control.warning{
     border: 1px solid var(--rojo);
+}
+.mensaje-enviado{
+    color: #ffffff;
+    /* display: none; */
+    transition: 2s ease;
 }
 
 .boton-enviar{

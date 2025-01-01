@@ -121,11 +121,6 @@ header .marca-a{
     font-size: 2em;
     cursor: pointer;
     display: none;
-    /* position: absolute;
-    z-index: 10;
-    top: 2%;
-    right: 0;
-    padding-right: 1em; */
 
 }
 #menu-hamburguesa, .menu-icono-x{

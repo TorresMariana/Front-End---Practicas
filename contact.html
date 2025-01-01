@@ -70,7 +70,7 @@
                 <div>
                     <div class="seleccionar">
                         <label for="fecha">Fecha (*):</label>
-                        <input class="form-control" type="date" id="fecha" min="2025-06-07" max="2025-12-31">
+                        <input class="form-control" type="date" id="fecha" min="" max="">
                     </div>
                     <span class="warning" id="mensaje-error-fecha">El campo es obligatorio*</span>
                 </div>
@@ -84,23 +84,17 @@
                 <div>
                     <div class="seleccionar">
                         <label for="cantidad">Cantidad de personas (*):</label>
-                        <input class="form-control" type="number" id="cantidad" min="1" max="10" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        <!-- <input class="form-control" type="number" id="cantidadPersonas" min="1" max="10" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"> -->
+                        <input class="form-control" type="number" id="cantidadPersonas" min="1" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     </div>
                     <span class="warning" id="mensaje-error-cantidad">El campo es obligatorio*</span>
                 </div>
-                <!-- <div class="legal">
-                    <span>(*) Los campos marcados con asterisco son obligatorios</span>
-                    <p class="terminos-condiciones">
-                        <input class="" type="checkbox" id="checkbox" name="terminos-condiciones">
-                        He leído y acepto la <a href="terminos-condiciones">política de privacidad</a>.
-                        <span class="warning" id="mensaje-error-legal">El campo es obligatorio.</span>
-                    </p>
-                </div> -->
 
                 <!--Botón de enviar-->
                 <button class="boton-enviar" type="submit" id="botonEnviar">Find a table</button>
             
             </form>
+            <span class="mensaje-enviado" id="mensaje-enviado">¡Enviado exitosamente!</span>
         </div>
         <img class="imagen-contacto-2" src="img/contacto-2.png" alt="imagen-contacto">
     </main>
@@ -130,6 +124,6 @@
         </div>
     </footer>
     
-    <script></script>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
