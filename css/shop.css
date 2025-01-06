@@ -3,5 +3,114 @@
     border: 2px solid rgb(var(--amarillo));
 }
 
+body{
+    background-image: url('../img/woman-with-pineapples-beach.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px auto;
+    background-position: top;
+    background-attachment: fixed; /* La imagen no se mueve al hacer scroll */
+}
+
+/*PORTADA*/
+.portada{
+    height: 70vh;
+    /* max-height: 700px; */
+    color: #000;
+    text-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+    text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px;
+    align-items: end;
+    text-align: end;
+}
+.portada h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+.portada p{
+    max-width: 35%;
+    margin: 2em 0;
+    font-weight: 500;
+    /* border: 2px solid blueviolet; */
+    /* text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px; */
+}
+.portada button{
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid #000;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: .5em 2em;
+    text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px;
+    box-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px;
+    /* box-shadow: 5px 5px 5px 0px rgb(255, 255, 255); */
+    
+}
+
 
 /*MAIN*/
+main.container{
+    background-color: #fff;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-items: center;
+    gap: 2em;
+}
+.tienda{
+    flex: 1 1 30%;
+    overflow: hidden;
+}
+.tienda img{
+    /* aspect-ratio: 4/3; */
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: top;
+}
+
+
+
+/* .tienda-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    body{
+        background-size: 950px auto;
+    }
+    .portada{
+        height: 50vh;
+        align-items: center;
+        text-align: center;
+    }
+    .portada h2{
+        font-size: 2em;
+    }
+    .portada p{
+        max-width: 80%;
+    }
+
+    /* .tienda:nth-child(3), .tienda:nth-child(6), .tienda:nth-child(9){
+        flex: 1 1 100%;
+        aspect-ratio: 3/4;
+    } */
+
+
+}
+
+
+@media screen and (max-width:700px){
+    .tienda{
+        flex: 1 1 30%;
+    }
+}
