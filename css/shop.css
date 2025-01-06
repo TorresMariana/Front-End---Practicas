@@ -20,8 +20,6 @@ body{
     text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px;
     align-items: end;
     text-align: end;
-
-    padding: 2em 0;
 }
 .portada h2{
     font-size: 3em;
@@ -96,6 +94,8 @@ main.container{
         height: 50vh;
         align-items: center;
         text-align: center;
+
+        margin: 2em 0;
     }
     .portada h2{
         font-size: 2em;
