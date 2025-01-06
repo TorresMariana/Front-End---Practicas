@@ -1,0 +1,113 @@
+.navegador nav ul li a:hover{
+    color: rgb(var(--amarillo));
+    border: 2px solid rgb(var(--amarillo));
+}
+
+/*MAIN*/
+main{
+    overflow: hidden;
+}
+main div{
+    /* border: 2px solid green; */
+    margin-bottom: 2em;
+}
+.quienes-somos, .que-hacemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 1em;
+    position: relative;
+    padding: 4em 0;
+}
+.quienes-somos img, .que-hacemos img{
+    width: 10vw;
+}
+.quienes-somos img:nth-child(1), .que-hacemos img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: -5%;
+    bottom: 0;
+    z-index: -1;
+}
+.quienes-somos img:nth-child(4), .que-hacemos img:nth-child(4){
+    position: absolute;
+    top: 0;
+    right: -5%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.quienes-somos h2, .que-hacemos h2{
+    font-size: 2.5em;
+}
+.quienes-somos p, .que-hacemos p{
+    max-width: 70%;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    /* background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%); */
+    /* background: linear-gradient(90deg, rgba(var(--rosado)) 0%, rgba(var(--amarillo)) 50%); */
+    position: relative;
+    padding: 2em 0;
+
+}
+.caracteristicas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%);
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+.caracteristicas-contenido{
+    color: #fff;
+    text-align: left;
+    padding: 2em;
+    justify-content: center;
+}
+.caracteristicas-contenido h3{
+    font-size: 1em;
+}
+.caracteristicas-contenido p{
+    font-size: .8em;
+    padding: 1em 0;
+}
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    .quienes-somos h2, .que-hacemos h2{
+        font-size: 1.8em;
+    }
+    .quienes-somos img, .que-hacemos img{
+        width: 25vw;
+        overflow: visible;
+    }
+    .quienes-somos img:nth-child(1), .que-hacemos img:nth-child(1){
+        left: -10%;
+    }
+    .quienes-somos img:nth-child(4), .que-hacemos img:nth-child(4){
+        top: 80%;
+        right: -10%;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .caracteristicas{
+        flex-direction: column;
+    }
+    .caracteristicas-contenido{
+        margin-bottom: 0;
+    }
+}

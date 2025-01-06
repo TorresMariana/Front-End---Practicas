@@ -221,8 +221,8 @@ footer > div:nth-child(2) span{
         font-weight: 700;
     }
     .navegador nav ul li a:hover{
-        color: #fff;
-        border: 2px solid #fff;
+        color: #fff !important;
+        border: 2px solid #fff !important;
     }
 
     /*MENU HAMBURGUESA*/
