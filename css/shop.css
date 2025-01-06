@@ -57,12 +57,11 @@ main.container{
 }
 .tienda{
     flex: 1 1 30%;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
     align-self: center;
 }
 .tienda img{
-    /* aspect-ratio: 4/3; */
     aspect-ratio: 9/16;
     object-fit: cover;
     object-position: top;
@@ -91,7 +90,7 @@ main.container{
         background-size: 950px auto;
     }
     .portada{
-        height: 50vh;
+        height: auto;
         align-items: center;
         text-align: center;
 
@@ -108,9 +107,5 @@ main.container{
         flex: 1 1 100%;
         aspect-ratio: 3/4;
     } */
-    .tienda{
-        aspect-ratio: 4/3;
-    }
-
 
 }
