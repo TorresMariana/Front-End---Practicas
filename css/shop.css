@@ -1,0 +1,7 @@
+.navegador nav ul li a:hover{
+    color: rgb(var(--amarillo));
+    border: 2px solid rgb(var(--amarillo));
+}
+
+
+/*MAIN*/

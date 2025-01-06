@@ -64,7 +64,8 @@ main div{
     top: 0;
     bottom: 0;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%);
+    /* background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%); */
+    background: linear-gradient(90deg, rgba(var(--rosado),1) 0%, rgba(var(--amarillo),1) 50%);
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 .caracteristicas-contenido{

@@ -43,7 +43,7 @@ body{
     text-align: center;
     align-items: center;
     padding: 2em;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 img{
@@ -119,13 +119,18 @@ label img{
 
 /*FOOTER*/
 footer{
-    /* background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%); */
-    background-image: url('../img/imagen-palmeras.png');
+    background: linear-gradient(90deg, rgba(var(--rosado),1) 0%, rgba(var(--amarillo),1) 50%);
+    /* background-image: url('../img/imagen-palmeras.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #ffffff;
     gap: 2em;
+    position: relative;
+    overflow: hidden;
+}
+footer div{
+    z-index: 2;
 }
 .redes-sociales{
     display: flex;
@@ -162,7 +167,24 @@ footer > div:nth-child(2) span{
 }
 
 
-
+.palmera-1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    opacity: .5;
+}
+.palmera-2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    opacity: .5;
+}
 
 
 
@@ -246,6 +268,13 @@ footer > div:nth-child(2) span{
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(344deg) brightness(109%) contrast(101%);
     }
 
+
+
+    /*FOOTER*/
+    .palmera-1, .palmera-2{
+        top: 30%;
+        height: 75%;
+    }
 }
 
 
