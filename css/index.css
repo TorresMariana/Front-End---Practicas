@@ -1,0 +1,157 @@
+body{
+    background-image: url('../img/pretty-female.jpg');
+    background-repeat: no-repeat;
+    background-size: 1440px auto;
+    background-position: top;
+    background-attachment: fixed; /* La imagen no se mueve al hacer scroll */
+}
+h1, .navegador nav ul li a{
+    color: #fff;
+}
+.navegador label img{
+    filter: invert(100%) sepia(100%) 
+            saturate(0%) hue-rotate(344deg) 
+            brightness(109%) contrast(101%);
+}
+
+
+/*MAIN*/
+main.container{
+    color: #fff;
+    position: relative;
+}
+main div{
+    /* border: 2px solid blue; */
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    align-content: center;
+    text-align: end;
+    padding-right: 8em;
+    text-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+main div h2{
+    font-size: 3em;
+    font-weight: 600;
+    margin: .5em 0;
+}
+main div p{
+    font-size: 1.2em;
+}
+
+/*section*/
+section.container{
+    background-color: #fff;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-items: center;
+    gap: 2em;
+}
+/*Primera fila con 2 columnas*/
+.contenido-texto{
+    flex: 1 1 45%; /* Ocupa el 45% del espacio disponible para 2 columnas */
+    margin: 3em 0;
+}
+/* Segunda fila con 3 columnas */
+.contenido-imagen {
+    flex: 1 1 30%; /* Ocupa el 30% del espacio disponible para 3 columnas */
+    margin: 3em 0;
+}
+
+.contenido-texto:nth-child(1){
+    justify-items: left;
+    text-align: left;
+    color: rgb(var(--celeste));
+}
+.contenido-texto:nth-child(2){
+    justify-items: right;
+    text-align: right;
+    color: rgb(var(--rosado));
+}
+.contenido-texto h2{
+    font-size: 3em;
+    font-weight: 900;
+    padding-bottom: .5em;
+}
+.contenido-texto p{
+    max-width: 80%;
+}
+
+.contenido-imagen{
+    aspect-ratio: 4/3;
+}
+.contenido-imagen img{
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    vertical-align: top;
+    object-position: center;
+}
+
+
+.contenido-imagen button{
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid rgb(var(--rosado));
+    color: rgb(var(--rosado));
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: .5em;
+    margin: 1em 0;
+    background-color: #fff;
+    transition: background-color .4s ease;
+}
+.contenido-imagen button:hover{
+    border: 2px solid rgb(var(--rosado));
+    color: #fff;
+    background-color: rgb(var(--rosado));
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    main div{
+        max-width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        align-content: center;
+        text-align: center;
+        padding-right: 0;
+        padding: 0 2em;
+    }
+    main div h2, .contenido-texto h2{
+        font-size: 2em;
+    }
+    main div p{
+        font-size:initial;
+    }
+
+    .contenido-texto{
+        margin: 2em 0;
+    }
+    .contenido-imagen{
+        margin: 0;
+    }
+    .contenido-texto, .contenido-imagen{
+        flex: 1 1 50%;
+    }
+    .contenido-texto p{
+        max-width: 75%;
+    }
+
+    section{
+        background-image: url('../img/ornamento-4.png');
+        background-repeat: repeat;
+        background-size: 100vw auto;
+        background-position: top;
+    }
+}

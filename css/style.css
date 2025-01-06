@@ -43,7 +43,7 @@ body{
     text-align: center;
     align-items: center;
     padding: 2em;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 img{
@@ -72,9 +72,9 @@ header.container, nav ul{
     align-items: center;
     gap: 2em;
 }
-header a, header div{
+/* header a, header div{
     border: 2px solid green;
-}
+} */
 
 /*navegador*/
 .navegador{
@@ -125,8 +125,6 @@ footer{
     background-size: cover;
     background-position: center;
     color: #ffffff;
-    /* height: 40vh; */
-    color: #fff;
     gap: 2em;
 }
 .redes-sociales{
