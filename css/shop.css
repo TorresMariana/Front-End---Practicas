@@ -58,6 +58,8 @@ main.container{
 .tienda{
     flex: 1 1 30%;
     overflow: hidden;
+    text-align: center;
+    align-self: center;
 }
 .tienda img{
     /* aspect-ratio: 4/3; */
@@ -104,13 +106,9 @@ main.container{
         flex: 1 1 100%;
         aspect-ratio: 3/4;
     } */
-
-
-}
-
-
-@media screen and (max-width:700px){
     .tienda{
-        flex: 1 1 30%;
+        aspect-ratio: 4/3;
     }
+
+
 }
