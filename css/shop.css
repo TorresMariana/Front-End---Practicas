@@ -58,8 +58,7 @@ main.container{
 .tienda{
     flex: 1 1 30%;
     /* overflow: hidden; */
-    text-align: center;
-    align-self: center;
+    aspect-ratio: 9/16;
 }
 .tienda img{
     aspect-ratio: 9/16;
@@ -103,9 +102,9 @@ main.container{
         max-width: 80%;
     }
 
-    /* .tienda:nth-child(3), .tienda:nth-child(6), .tienda:nth-child(9){
-        flex: 1 1 100%;
-        aspect-ratio: 3/4;
-    } */
+    .tienda:nth-child(3), .tienda:nth-child(6), .tienda:nth-child(9){
+        flex: 1 1 45%;
+        /* aspect-ratio: 3/4; */
+    }
 
 }
