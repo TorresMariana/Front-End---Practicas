@@ -50,31 +50,30 @@ body{
 /*MAIN*/
 main.container{
     background-color: #fff;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     flex-direction: row !important;
     justify-items: center;
-    gap: 2em;
+    gap: 2em; */
 }
-.tienda{
+/* .tienda{
     flex: 1 1 30%;
-    /* overflow: hidden; */
 }
 .tienda img{
     aspect-ratio: 9/16;
     object-fit: cover;
     object-position: top;
     vertical-align: top;
-}
-
-
-
-/* .tienda-contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
 } */
+
+
+.tienda-contenedor{
+    columns: 3 250px;
+    column-gap: 1em;
+}
+.tienda img{
+    vertical-align: top;
+    margin-bottom: 1em;
+}
 
 
 
@@ -106,9 +105,8 @@ main.container{
         aspect-ratio: 3/4;
     } */
 
-    .tienda{
-        flex: 1 1 45%;
-        aspect-ratio: 2/1;
+    .tienda-contenedor{
+        columns: 3 150px;
     }
 
 }
