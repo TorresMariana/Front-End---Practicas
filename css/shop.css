@@ -15,9 +15,8 @@ body{
 .portada{
     height: 70vh;
     /* max-height: 700px; */
-    color: #000;
-    text-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
-    text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px;
+    color: #fff;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
     align-items: end;
     text-align: end;
 }
@@ -26,11 +25,11 @@ body{
     font-weight: 700;
 }
 .portada p{
+    color: #000;
     max-width: 35%;
     margin: 2em 0;
-    font-weight: 500;
-    /* border: 2px solid blueviolet; */
-    /* text-shadow: rgb(255, 255, 255) 1.95px 1.95px 2.6px; */
+    font-weight: 600;
+    text-shadow: rgb(255, 255, 255) 3px 3px 3px;
 }
 .portada button{
     background-color: transparent;
@@ -50,21 +49,8 @@ body{
 /*MAIN*/
 main.container{
     background-color: #fff;
-    /* flex-wrap: wrap;
-    flex-direction: row !important;
-    justify-items: center;
-    gap: 2em; */
-}
-/* .tienda{
-    flex: 1 1 30%;
-}
-.tienda img{
-    aspect-ratio: 9/16;
-    object-fit: cover;
-    object-position: top;
-    vertical-align: top;
-} */
 
+}
 
 .tienda-contenedor{
     columns: 3 250px;
