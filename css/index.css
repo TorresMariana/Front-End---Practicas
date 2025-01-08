@@ -13,6 +13,10 @@ h1, .navegador nav ul li a{
             saturate(0%) hue-rotate(344deg) 
             brightness(109%) contrast(101%);
 }
+.navegador nav ul li a:hover{
+    color: #eaff78;
+    border: 2px solid #eaff78;
+}
 
 
 /*MAIN*/

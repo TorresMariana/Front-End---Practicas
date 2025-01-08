@@ -1,7 +1,7 @@
-.navegador nav ul li a:hover{
+/* .navegador nav ul li a:hover{
     color: rgb(var(--amarillo));
     border: 2px solid rgb(var(--amarillo));
-}
+} */
 
 /*MAIN*/
 main{
@@ -30,7 +30,7 @@ main div{
     bottom: 0;
     z-index: -1;
 }
-.quienes-somos img:nth-child(4), .que-hacemos img:nth-child(4){
+.quienes-somos img:nth-child(4), .que-hacemos img:nth-child(6){
     position: absolute;
     top: 0;
     right: -5%;
@@ -54,8 +54,6 @@ main div{
     justify-content: center;
     align-items: center;
     gap: 2em;
-    /* background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%); */
-    /* background: linear-gradient(90deg, rgba(var(--rosado)) 0%, rgba(var(--amarillo)) 50%); */
     position: relative;
     padding: 2em 0;
 
@@ -66,7 +64,6 @@ main div{
     top: 0;
     bottom: 0;
     width: 100vw;
-    /* background: linear-gradient(90deg, rgba(var(--rosado),.8) 0%, rgba(var(--amarillo),.8) 50%); */
     background: linear-gradient(90deg, rgba(var(--rosado),1) 0%, rgba(var(--amarillo),1) 50%);
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
@@ -100,7 +97,7 @@ main div{
     .quienes-somos img:nth-child(1), .que-hacemos img:nth-child(1){
         left: -10%;
     }
-    .quienes-somos img:nth-child(4), .que-hacemos img:nth-child(4){
+    .quienes-somos img:nth-child(4), .que-hacemos img:nth-child(6){
         top: 80%;
         right: -10%;
         bottom: 0;

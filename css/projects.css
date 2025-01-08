@@ -1,0 +1,139 @@
+
+/*MAIN*/
+main{
+    background-image: url('../img/ornamento-4.png');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top;
+}
+.proyecto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1em 0;
+    /* border: 2px solid green; */
+}
+
+.proyecto:nth-child(2) .proyecto-imagen{
+    order: 1;
+}
+.proyecto:nth-child(2) .proyecto-texto{
+    order: 2;
+}
+
+.proyecto-texto{
+    text-align: left;
+    padding: 2em;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+.proyecto-texto h3{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+.proyecto-imagen{
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    height: 100%;
+}
+.proyecto-imagen img{
+    vertical-align: top;
+    object-fit: cover;
+    height: 100%;
+}
+.proyecto:nth-child(1){
+    color: rgb(var(--rosado));
+    background-color: rgb(var(--amarilloClaro));
+}
+.proyecto:nth-child(2){
+    color: rgb(var(--amarilloClaro));
+    background-color: rgb(var(--naranja));
+}
+.proyecto:nth-child(3){
+    color: #fff;
+    background-color: rgb(var(--celeste));
+}
+
+/*Fechas*/
+.fechas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+    padding: 2em 0;
+
+}
+.fechas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(var(--rosado),1) 0%, rgba(var(--amarillo),1) 50%);
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+.fechas-contenedor{
+    padding: 4em 2em;
+    color: #fff;
+}
+
+
+/*ASIDE*/
+aside{
+    position: relative;
+}
+aside div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-self: center;
+    justify-self: center;
+    max-width: 75%;
+}
+aside div p:nth-child(2){
+    font-weight: 700;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:950px){
+    main{
+        background-image: url('../img/ornamento-5.png');
+    }
+    .proyecto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .proyecto-imagen{
+        order: 1;
+    }
+    .proyecto-texto{
+        order: 2;
+    }
+
+    .fechas{
+        flex-direction: column;
+    }
+    .fechas-contenedor{
+        padding: 2em;
+    }
+
+
+
+}
